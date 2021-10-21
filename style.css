@@ -1,0 +1,393 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+
+}
+
+body{
+  background-color:#f3faf5;
+}
+
+
+/*--------------------------------------------------------------
+#  NAV MENU
+--------------------------------------------------------------*/
+
+nav{
+  display: flex;
+  background:rgb(190, 136, 240);
+  height: 85px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0, 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0, 10px ;
+}
+
+nav ul li a{
+
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-right: 20px;
+  border-radius: 90px;
+  text-decoration: none;
+}
+
+
+.hamberger{
+  display: none;
+  background-color:transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 80px;
+  border: 0cm;
+
+}
+
+#check{
+  display: none;
+}
+
+
+
+a.active, a:hover{
+  background: #1b9bff;
+  transition: 0.6s ease;
+  padding: 10px; 
+
+}
+
+/*END  NAVBAR */
+
+/*--------------------------------------------------------------
+# PHONE NAV MENU
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 952px) {
+
+  
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+  }
+
+  nav ul li a{
+    font-size: 15px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .hamberger{
+    display: block;
+  }
+
+  
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0%;
+    text-align: center;
+    transition: all .5s;
+    
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+
+  }
+
+  a:hover, a.active{
+    background: none;
+    color: #0082e6;
+  }
+
+  #check :checked  ~ ul{
+    left: 0%;
+  }
+
+}
+
+/*END*/
+
+
+
+/*--------------------------------------------------------------
+# HEADINGS & PARAGRA
+--------------------------------------------------------------*/
+
+h1{
+  text-align: center;
+  font-size: 250%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 15vw;
+  color: rgb(100, 149, 237);
+  text-decoration: none;
+  
+}
+
+p1{
+  text-align: center;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #006;
+}
+
+/*-------------------------- FIRST CARDS--------------------- */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 1px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  margin-left: 200px;
+  margin-top: 100vh;
+  
+}
+
+.card:first-child {
+  margin-left: 30px;
+}
+
+
+/*last element of the first row*/
+
+.card:nth-child(5n) {
+  margin-right: 30px;
+}
+
+
+/*first-element of the 2nd row*/
+
+.card:nth-child(5n+1) {
+  margin-left: 30px;
+}
+
+
+/*last element*/
+
+.card:last-child {
+  margin-right: 30px;
+}
+
+
+
+.card {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+.card {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+
+
+
+.description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+#hero .card .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#hero .card.title a {
+  border-radius: none;
+  color: #124265;
+  transition: 0.3s;
+}
+
+/*END CARD 1 */
+
+
+
+/*------------------SECOND CARD----------------------------- */
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  margin-left: 250px;
+  margin-top: 10vh
+
+}
+
+.card2 {
+  display: block;
+  width: 100%;
+}
+
+
+.card2 {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.card2:hover {
+  transform: scale(1.08);
+}
+
+#hero .card2 .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#hero .card2.title a {
+  border-radius: none;
+  color: #124265;
+  transition: 0.3s;
+}
+
+
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-height: 800px) {
+  #hero {
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #hero {
+    height: auto;
+  }
+
+}
+
+
+
+
+
+
+
+/* END OF CARD 2 */
+
+
+
+/*--------------------------------------------------------------
+# FOOTER & PARAGRAPHS
+--------------------------------------------------------------*/
+
+.footer-basic {
+  padding:40px 0;
+
+  color:#4b4c4d;
+  position: absolute;
+  bottom: -250vh;
+  width: 100%;
+  height: 2.5rem;
+}
+
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:0.5em;
+  
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/*--------------------------------------------------------------
+# FOOTER END
+--------------------------------------------------------------*/
+
